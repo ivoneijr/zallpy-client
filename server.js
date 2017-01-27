@@ -1,5 +1,5 @@
-import open from 'open';
-import express from 'express';
+var express = require('express');
+var open = require('open');
 
 const app = express();
 const port = process.env.PORT || 8080;
