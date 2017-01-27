@@ -1,5 +1,5 @@
-var express = require('express');
-var open = require('open');
+import express from 'express';
+import open from 'open';
 
 const app = express();
 const port = process.env.PORT || 8080;
@@ -15,10 +15,6 @@ app.get('/ping', (req, res) => {
 app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname, '../public/index.html'));
 });
-
-// app.listen(port, function() {
-// 	console.log('Our app is running on http://localhost:' + port);
-// });
 
 app.listen(port, function(err) {
   if (err) {
