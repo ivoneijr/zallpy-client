@@ -20,7 +20,8 @@ app.get('/ping', (req, res) => {
 app.get('/*', function(req, res) {
 
 	// ejs render automatically looks in the views folder
-	res.render('index');
+	// res.render('index');
+  res.sendFile(path.join(__dirname, '../public/index.html'));
 });
 
 app.listen(port, function() {

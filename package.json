@@ -1,6 +1,9 @@
 {
   "name": "zallpy-client",
-  "description": "Our sample Node to Heroku app",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Ivonei Marques",
+  "license": "ISC",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
