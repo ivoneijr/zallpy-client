@@ -16,9 +16,9 @@ app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname, '../public/index.html'));
 });
 
-app.listen(port, function() {
-	console.log('Our app is running on http://localhost:' + port);
-});
+// app.listen(port, function() {
+// 	console.log('Our app is running on http://localhost:' + port);
+// });
 
 app.listen(port, function(err) {
   if (err) {
