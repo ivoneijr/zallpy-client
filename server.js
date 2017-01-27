@@ -1,5 +1,5 @@
 var express = require('express');
-var compression = require('compression')
+var compression = require('compression');
 var open = require('open');
 
 const app = express();
