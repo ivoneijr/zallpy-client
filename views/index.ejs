@@ -2,23 +2,42 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Node Sample App</title>
+	<title>Zallpy client</title>
 
 	<!-- CSS -->
 	<!-- load bootstrap and our own personal stylesheet -->
-	<link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/superhero/bootstrap.min.css" rel="stylesheet">
+	<!-- <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/superhero/bootstrap.min.css" rel="stylesheet"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/sandstone/bootstrap.min.css" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
 
-<div class="container">
+	<div id="app">
+		<div className="container">
+			<nav className="navbar navbar-inverse navbar-fixed-top">
+	      <div className="container-fluid">
+	        <div className="navbar-header">
+	          <Link to="/" className="navbar-brand">Zallpy</Link>
+	        </div>
+
+	        <div className="collapse navbar-collapse">
+	          <ul className="nav navbar-nav navbar-right">
+	            <li><Link to="/signup" className="navbar-brand">Sign up</Link></li>
+	          </ul>
+	        </div>
+	      </div>
+	    </nav>
+		</div>
+	</div>
+	<!-- <script src="bundle.js"></script> -->
+<!-- <div class="container">
 	<div class="jumbotron">
 		<h1>This Is Heroku Awesome!</h1>
 		<p>This is the sample</p>
 		<a href="#" class="btn btn-primary btn-lg">View the Tutorial</a>
 	</div>
-</div>
+</div> -->
 	
 </body>
 </html>
