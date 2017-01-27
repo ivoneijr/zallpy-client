@@ -1,12 +1,17 @@
 var express = require('express');
+var compression = require('compression')
 var open = require('open');
 
 const app = express();
 const port = process.env.PORT || 8080;
 
+// compress requests
+app.use(compression());
+
 // make express look in the public directory for assets (css/js/img)
 app.use(express.static(__dirname + '/public'));
 
+//routes
 app.get('/ping', (req, res) => {
   res.send({status: 'ok'});
 });
