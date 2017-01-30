@@ -1,6 +1,7 @@
 var express = require('express');
 var compression = require('compression');
 var open = require('open');
+var path = require('path');
 
 const app = express();
 const port = process.env.PORT || 8080;
