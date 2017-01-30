@@ -1,2 +1,2 @@
-export const API_URL = "http://zallpy-server.herokuapp.com/api/v1";
+export const API_URL = "https://zallpy-server.herokuapp.com/api/v1";
 
